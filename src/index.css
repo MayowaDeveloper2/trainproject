@@ -98,10 +98,11 @@ code {
   border-width: 1px;
   margin-left: 95px;
   transition: border-color 0.3s;
+  padding-left: 10px;
 }
 
 .inputemail::placeholder {
-  padding-left: 10px;
+  text-indent: 0;
 }
 
 .button {
@@ -114,6 +115,7 @@ code {
   border: none;
 }
 
+
 .centerr {
   margin-left: 95px;
 }
@@ -124,4 +126,27 @@ code {
   font-size: 20px;
   font-weight: lighter;
   color: #8F8F8E;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.eye-icon {
+  position: relative;
+  right: 30px;
+  cursor: pointer;
+}
+
+.white {
+  color: white;
+}
+
+.white span {
+  cursor: pointer;
+}
+
+.white span:hover {
+  color: white;
+  text-decoration: underline;
 }

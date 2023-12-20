@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 
-const signup = () => {
+const Signup = () => {
+    const [showPassword, setShowPassword] = useState(false);
+    
+    const togglePasswordVisibility = () => {
+        setShowPassword(!showPassword);
+    };
+
     return (
         <>
         <div className="my-modal">
@@ -41,10 +49,15 @@ const signup = () => {
                     />
                 </label>
                 <br/>
-                <label>
+                <label className="password-input">
                     <input className="inputemail down-3"
-                     type="password"
+                     type={showPassword ? "text" : "password"}
                      placeholder="Password"
+                    />
+                    <FontAwesomeIcon
+                      icon={showPassword ? faEye : faEyeSlash}
+                      className="eye-icon"
+                      onClick={togglePasswordVisibility}
                     />
                 </label>
                 <br/>
@@ -52,11 +65,9 @@ const signup = () => {
                     Create My Account
                 </button>
             </form>
-
         </div>
-        
         </>
     )
 }
 
-export default signup;
+export default Signup;
