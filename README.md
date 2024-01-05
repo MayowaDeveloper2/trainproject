@@ -1,10 +1,9 @@
-# Getting Started with Create React App
+# Train Booking Ticket Web application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An innovative Train Ticket Booking web application that offers users a seamless platform to effortlessly plan and organize their rail travel.
 
-## Available Scripts
-
-In the project directory, you can run:
+# End result
+Click here: https://bsptrain.netlify.app/
 
 ### `npm start`
 
